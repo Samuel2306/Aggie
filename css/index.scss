@@ -1,0 +1,435 @@
+
+.box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.box .heart{
+    position: absolute !important;
+    top: 21% !important;
+    left: 14% !important;
+    width: 70% !important;
+    height: 35% !important;
+    background: url("../images/heart.png") no-repeat center center;
+    background-size: contain;
+    /*animation-duration: 3s !important;           !*!/动画持续时间*!
+    !*animate-delay: 1s; *!             !*!/动画延迟时间*!
+    animation-iteration-count: infinite !important;     !*!/动画执行次数，无限次数：infinite*!*/
+    -webkit-animation: heart-frames 2000ms infinite;
+    -moz-animation: heart-frames 2000ms infinite;
+    animation: heart-frames 2000ms infinite;
+}
+@-webkit-keyframes heart-frames {
+    0% {
+        transform: scale(1);
+        opacity:.9;
+    }
+    25% {
+        transform: scale(0.9);
+        opacity:1;
+    }
+    50% {
+        transform: scale(1);
+        opacity:.9;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity:1;
+    }
+    100% {
+        transform: scale(1);
+        opacity:.9;
+    }
+}
+@-moz-keyframes heart-frames {
+    0% {
+        transform: scale(1);
+        opacity:.9;
+    }
+    25% {
+        transform: scale(0.9);
+        opacity:1;
+    }
+    50% {
+        transform: scale(1);
+        opacity:.9;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity:1;
+    }
+    100% {
+        transform: scale(1);
+        opacity:.9;
+    }
+}
+@keyframes heart-frames {
+    0% {
+        transform: scale(1);
+        opacity:.9;
+    }
+    25% {
+        transform: scale(0.9);
+        opacity:1;
+    }
+    50% {
+        transform: scale(1);
+        opacity:.9;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity:1;
+    }
+    100% {
+        transform: scale(1);
+        opacity:.9;
+    }
+}
+.Eng{
+    position: absolute;
+    top: 16%;
+    left: 15%;
+    width: 70%;
+}
+#box1{
+    display: none;
+    background-image: url("../images/bg2.jpg");
+}
+#box1.zoomIn{
+    display: block;
+}
+#box1 .text{
+    font-size: 0.4rem;
+    line-height: 2.5;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#box1 .music{
+    position: absolute;
+    top: 1%;
+    right: 12%;
+}
+.music img{
+    width: 0.8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.persons{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    width: 90%;
+    height: 3rem;
+    /*background-color: red;*/
+}
+.boy{
+    position: absolute;
+    left: 0;
+    bottom: 16%;
+    background: url("../images/boy1.png") no-repeat left center;
+    background-size: cover;
+    width: 1rem;
+    height: 60%;
+}
+
+.boy1{
+    display: none;
+    left: 0.25rem;
+    background-image: url("../images/boy2.png");
+}
+.boy2{
+    display: none;
+    left: 0.5rem;
+    background-image: url("../images/boy4.png");
+}
+.boy3{
+    display: none;
+    left: 0.75rem;
+    background-image: url("../images/boy1.png");
+}
+.boy4{
+    display: none;
+    left: 1rem;
+    background-image: url("../images/boy3.png");
+}
+.boy5{
+    display: none;
+    left: 1.25rem;
+    background-image: url("../images/boy2.png");
+}
+.boy6{
+    display: none;
+    left: 1.5rem;
+    background-image: url("../images/boy4.png");
+}
+.boy7{
+    display: none;
+    left: 1.75rem;
+    background-image: url("../images/boy1.png");
+}
+.boy8{
+    display: none;
+    left: 2rem;
+    background-image: url("../images/boy3.png");
+}
+.boy9{
+    display: none;
+    left: 2.25rem;
+    background-image: url("../images/boy2.png");
+}
+.boy10{
+    display: none;
+    left: 2.5rem;
+    background-image: url("../images/boy4.png");
+}
+.boy11{
+    display: none;
+    left: 2.75rem;
+    background-image: url("../images/boy1.png");
+}
+.boy12{
+    display: none;
+    left: 3rem;
+    background-image: url("../images/boy3.png");
+}
+.boy13{
+    display: none;
+    left: 3.25rem;
+    background-image: url("../images/boy2.png");
+}
+.boy14{
+    display: none;
+    left: 3.5rem;
+    background-image: url("../images/boy4.png");
+}
+.boy15{
+    display: none;
+    left: 3.75rem;
+    background-image: url("../images/boy2.png");
+}
+.boy16{
+    display: none;
+    left: 4rem;
+    background-image: url("../images/boy3.png");
+}
+.boy17{
+    display: none;
+    left: 4.25rem;
+    background-image: url("../images/boy2.png");
+}
+.boy18{
+    display: none;
+    left: 4.5rem;
+    background-image: url("../images/boy4.png");
+}
+.boy19{
+    display: none;
+    left: 4.75rem;
+    background-image: url("../images/boy1.png");
+}
+.boy20{
+    display: none;
+    left: 5rem;
+    background-image: url("../images/boy5.png");
+}
+.girl{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../images/girl.png") no-repeat center;
+    background-size: contain;
+    width: 1rem;
+    height: 100%;
+}
+
+
+
+.music img.rotate{
+    animation:8s infinite linear 0s myrotate;
+    -webkit-animation:8s infinite linear 0s myrotate;/* Safari and Chrome */
+}
+
+@keyframes myrotate{
+    form {transform:rotate(0deg);}
+    to    {transform:rotate(360deg);}
+}
+@-webkit-keyframes myrotate{/* Safari and Chrome */
+    form {transform:rotate(0deg);}
+    to    {transform:rotate(360deg);}
+}
+
+.circle-container {
+    $particleNum: 200;
+    $particleColor: hsl(180, 100%, 80%);
+
+    position: absolute;
+    transform: translateY(-10vh);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 0;
+    height: 0;
+/*180, 100%, 80%*/
+    .circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        mix-blend-mode: screen;
+        background-image: radial-gradient(
+                        hsl(3,100%,69%),
+                        hsl(3,100%,69%) 10%,
+                        hsla(3,100%,69%, 0) 56%
+        );
+
+        animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+
+        @keyframes fade-frames {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scale-frames {
+            0% {
+                transform: scale3d(0.4, 0.4, 1);
+            }
+
+            50% {
+                transform: scale3d(2.2, 2.2, 1);
+            }
+
+            100% {
+                transform: scale3d(0.4, 0.4, 1);
+            }
+        }
+    }
+
+    $particleBaseSize: 8;
+
+
+    @for $i from 1 through $particleNum {
+        &:nth-child(#{$i}) {
+            $circleSize: random($particleBaseSize);
+            width: $circleSize + px;
+            height: $circleSize + px;
+
+            $startPositionY: random(10) + 100;
+            $framesName: "move-frames-" + $i;
+            $moveDuration: 28000 + random(9000) + ms;
+
+            animation-name: #{$framesName};
+            animation-duration: $moveDuration;
+            animation-delay: random(37000) + ms;
+
+            @keyframes #{$framesName} {
+                from {
+                    transform: translate3d(
+                                    #{random(100) + vw},
+                                    #{$startPositionY + vh},
+                                    0
+                    );
+                }
+
+                to {
+                    transform: translate3d(
+                                    #{random(100) + vw},
+                                    #{- $startPositionY - random(30) + vh},
+                                    0
+                    );
+                }
+            }
+
+            .circle {
+                animation-delay: random(4000) + ms;
+            }
+        }
+    }
+}
+
+
+
+
+
+.box form{
+    width: 60%;
+    position: absolute;
+    bottom: 6%;
+    left: 20%;
+}
+
+
+
+.box form .form-group {
+    margin-bottom: 0;
+}
+
+.box form .form-control {
+    height: 1rem;
+    padding: .175rem .35rem;
+    font-size: 0.4rem;
+    border-radius: .15rem;
+    -webkit-outline: none;
+    -moz-outline: none;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.box form .btn {
+    height: 1rem;
+    padding: .075rem .35rem;
+    font-size: 0.4rem;
+    border-radius: .15rem;
+    width: 100%;
+    -webkit-outline: none;
+    -moz-outline: none;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.modal-dialog .no{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.1rem 0 0 0.3rem;
+}
+.modal-dialog .modal-content{
+    display: block;
+    padding-bottom: 0.2rem;
+}
+.modal-dialog span.text{
+    display: inline-block;
+    font-size: 0.3rem;
+    line-height: 1.5;
+    margin-top: 0.1rem;
+}
+.close{
+    margin-top: -0.65rem;
+    margin-right: 0.15rem;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.close span{
+    font-size: 0.5rem;
+}
