@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <div class="music">
+        <img id="music" src="./images/music.png" class="rotate">
+        <audio id="audio" src="http://media.tumengxia.com/music.mp3" loop preload></audio>
+    </div>
     <div class="box animated" id="box">
         <div class="heart"></div>
         <!--<img class="heart" src="./images/heart.png" alt="">-->
@@ -31,10 +35,6 @@
         </div>
     </div>
     <div class="box animated" id="box1">
-        <div class="music">
-            <img id="music" src="./images/music.png" class="rotate">
-            <audio id="audio" src="http://media.tumengxia.com/music.mp3" loop preload></audio>
-        </div>
         <div class="text" id="content">
             <!--虽然我们初次见面的方式很"传统"，但是相识就是缘分，希望这一次相见能给我们两个人的生活带来新的希望和新的开始！-->
         </div>
@@ -673,6 +673,26 @@
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="./js/rem.js"></script>
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('audio');
+        $("#music").click(function(){
+            if($(this).hasClass('rotate')){
+                $(this).removeClass('rotate')
+                audio.pause()
+            }else{
+                $(this).addClass('rotate')
+                audio.play()
+            }
+        })
+        function audioAutoPlay() {
+            audio.play();
+            //侦听微信ready事件。
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+    })
     $(function(){
         var str = '虽然我们初次见面的方式很"传统"，但是相识就是缘分，希望这一次相见能给我们两个人的生活带来新的希望和新的开始！'
         $(".btn-success").click(function(){
@@ -682,7 +702,6 @@
 
                 setTimeout(function(){
                     $('#box1').addClass('zoomIn')
-                    var audio = document.getElementById('audio');
                     var index = 2
                     var boyIndex = 1
                     setTimeout(function(){
@@ -695,20 +714,10 @@
                             }
                         },200)
 
-                        setTimeout(function(){
+                        /*setTimeout(function(){
                             audio.play()
-                        },1500)
+                        },1500)*/
 
-
-                        $("#music").click(function(){
-                            if($(this).hasClass('rotate')){
-                                $(this).removeClass('rotate')
-                                audio.pause()
-                            }else{
-                                $(this).addClass('rotate')
-                                audio.play()
-                            }
-                        })
 
                         var boy = setInterval(function(){
                             if(boyIndex <=20){
