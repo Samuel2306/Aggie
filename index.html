@@ -726,12 +726,10 @@
                 $('#myModal').modal('show')
             }
         })
-        isWeiXinAndIos()
-        alert("asd")
         $('#myModal').on('hidden.bs.modal', function (e) {
             $(".name").val('')
         })
-        // 解决微信浏览器web页面键盘收起页面不回弹
+        /*// 解决微信浏览器web页面键盘收起页面不回弹
         (function () {
             let myFunction
             let isWXAndIos = isWeiXinAndIos()
@@ -753,7 +751,12 @@
             let isIos = /\(i[^;]+;( U;)? CPU.+Mac OS X/i.test(ua)
             $(".name").val(isIos)
             return isWeixin && isIos
-        }
+        }*/
+        $(".name").blur(function(){
+            setTimeout(function () {
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+            }, 200)
+        })
     })
 
 </script>
