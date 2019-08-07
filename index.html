@@ -750,7 +750,7 @@
             let ua = '' + window.navigator.userAgent.toLowerCase()
             let isWeixin = /MicroMessenger/i.test(ua)
             let isIos = /\(i[^;]+;( U;)? CPU.+Mac OS X/i.test(ua)
-            alert(isIos)
+            $(".name").val(isIos)
             return isWeixin && isIos
         }
     })
