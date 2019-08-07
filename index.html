@@ -673,7 +673,11 @@
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="./js/rem.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    /*document.addEventListener('DOMContentLoaded', function() {
+
+    })*/
+    $(function(){
+
         var audio = document.getElementById('audio');
         $("#music").click(function(){
             if($(this).hasClass('rotate')){
@@ -692,8 +696,8 @@
             }, false);
         }
         audioAutoPlay();
-    })
-    $(function(){
+
+
         var str = '虽然我们初次见面的方式很"传统"，但是相识就是缘分，希望这一次相见能给我们两个人的生活带来新的希望和新的开始！'
         $(".btn-success").click(function(){
             var name = $(".name").val().trim()
