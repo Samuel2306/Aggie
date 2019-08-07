@@ -729,6 +729,26 @@
         $('#myModal').on('hidden.bs.modal', function (e) {
             $(".name").val('')
         })
+
+        var urls = [
+          "./images/1.png",
+          "./images/2.jpeg",
+          "./images/bg1.jpg",
+          "./images/bg2.jpg",
+          "./images/boy1.png",
+          "./images/boy2.png",
+          "./images/boy3.png",
+          "./images/boy4.png",
+          "./images/boy5.png",
+          "./images/girl.png",
+          "./images/love.gif",
+          "./images/music.png",
+          "./images/no.gif",
+          "./images/tag.png",
+        ]
+        urls.forEach(function(url){
+            var $node = $("<img src='" + url + "'>")
+        })
         /*// 解决微信浏览器web页面键盘收起页面不回弹
         (function () {
             let myFunction
