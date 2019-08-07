@@ -726,7 +726,7 @@
                 $('#myModal').modal('show')
             }
         })
-        isWeiXinAndIos ()
+        isWeiXinAndIos()
         alert("asd")
         $('#myModal').on('hidden.bs.modal', function (e) {
             $(".name").val('')
@@ -747,7 +747,7 @@
                 })
             }
         })()
-        function isWeiXinAndIos () {
+        function isWeiXinAndIos() {
             let ua = '' + window.navigator.userAgent.toLowerCase()
             let isWeixin = /MicroMessenger/i.test(ua)
             let isIos = /\(i[^;]+;( U;)? CPU.+Mac OS X/i.test(ua)
